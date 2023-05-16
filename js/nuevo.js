@@ -37,7 +37,16 @@ function carga_selec() {
     );
 }
 function añadircli(){
-    alert($("select").val());
+    // Funcion que cambia el estado del cliente a 1
+    var codcli=$("select").val();
+    alert(codcli);
+    $.post(
+        "./cambioestadocli.php",
+        {codigo:codcli},
+        function (regreso){
+            alert (regreso);
+        }
+    );
 }
 function limpiar()
     {    
