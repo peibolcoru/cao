@@ -39,12 +39,12 @@ function carga_selec() {
 function añadircli(){
     // Funcion que cambia el estado del cliente a 1
     var codcli=$("select").val();
-    alert(codcli);
+    // alert(codcli);
     $.post(
         "./cambioestadocli.php",
         {codigo:codcli},
         function (regreso){
-            alert (regreso);
+            location.reload();
         }
     );
 }

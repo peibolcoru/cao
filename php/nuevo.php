@@ -75,7 +75,7 @@ if (isset($_SESSION["admin"])) {
                 <div class="contenedor_cliente">
                     <?php 
                     $sql_cli="SELECT * FROM cliente
-                            WHERE cod_cli='1'";
+                            WHERE estado_cli='1'";
                     $ejec_cli=con()->query($sql_cli);
                     foreach($ejec_cli as $reg_cli){
                     ?>
