@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/form.css">
+    <script src="./js/form.js"></script>
+</head>
+<body>
+    <div class="container">
+        <form autocomplete="off" id="form" action="./php/form.php" method="POST">
+            <h1 id="message">CAO CAO LOGIN</h1><small id="smallMessage"> </small>
+            <div class="field">
+                <input type="name" name="nombre" placeholder="Nombre" id="nombre" autocomplete="off" required/>
+                <label for="nombre">Nombre</label>
+            </div>
+            <div class="field">
+                <input type="password" name="password" placeholder="Contraseña" id="password" autocomplete="Contraseña" required/>
+                <label for="password">Password</label>
+            </div>
+            <button id="submit">Conectar</button>
+            <p></p>
+        </form>
+    </div>
+</body>
+</html>
